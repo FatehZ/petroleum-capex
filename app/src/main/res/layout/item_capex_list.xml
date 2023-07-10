@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvLinkedImage"
+    android:layout_margin="@dimen/_2sdp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/purple_700"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvYear"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:id="@+id/tvCapex"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

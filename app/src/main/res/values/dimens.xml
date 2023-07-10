@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="column_distance">@dimen/_3sdp</dimen>
+    <dimen name="text_size">@dimen/_9sdp</dimen>
+</resources>
